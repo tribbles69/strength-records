@@ -1,0 +1,59 @@
+name: Change record status
+
+# Mark a record as under review, evidence unavailable, standing again, removed, or delete it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      record_id:
+        description: 'Record id (the part after ?id= in the record page address)'
+        required: true
+        type: string
+      new_status:
+        description: 'New status'
+        required: true
+        type: choice
+        options:
+          - under-review
+          - evidence-unavailable
+          - standing
+          - removed
+          - delete
+      reason:
+        description: 'Short reason, shown on the site (not needed for standing or delete). No names, no email addresses.'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-changes
+  cancel-in-progress: false
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Change the record
+        env:
+          RECORD_ID: ${{ inputs.record_id }}
+          NEW_STATUS: ${{ inputs.new_status }}
+          REASON: ${{ inputs.reason }}
+        shell: bash
+        run: node scripts/status.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Validate every data file
+        run: node scripts/validate.mjs
+      - name: Commit and publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          git commit -m "Change record status"
+          git push origin main

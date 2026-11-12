@@ -1,0 +1,23 @@
+{
+  "id": "example-bench-bodyweight-1",
+  "handle": "example_lifter_d",
+  "lift": "bench",
+  "weight_kg": 82.5,
+  "entered_as": {
+    "value": 82.5,
+    "unit": "kg"
+  },
+  "bodyweight_kg": 68.2,
+  "bodyweight_proof": "same-take",
+  "division": "bodyweight",
+  "group": "women",
+  "class": "70",
+  "adaptive": null,
+  "date": "2026-10-20",
+  "video": null,
+  "weighin_video": null,
+  "approved": "2026-11-12",
+  "status": "standing",
+  "notes": "Example record for testing the site. Not a real lift.",
+  "example": true
+}

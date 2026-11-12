@@ -1,6 +1,6 @@
 # Strength Records Registry: design (v1)
 
-Status: **draft for Aaron's review.** Nothing is built until this is approved.
+Status: **approved 12 Nov 2026.** Decisions are recorded in [section 11](#11-decisions-12-nov-2026).
 Anything marked **[Q1]**, **[Q2]** … points to an open question in [section 10](#10-open-questions-for-aaron).
 
 ## 1. What this is
@@ -351,3 +351,15 @@ Each has my recommended answer. A plain "agreed" accepts all the recommendations
 | **Q13** | **Straps on the deadlift?** | No straps (matches what most people mean by a deadlift record). Straps are allowed on trap bar, rack pull, shrug and rack hold. |
 | **Q14** | **Time limit between lift and submission?** | None, but the lift date must be consistent with the video's upload date. Old lifts are welcome if the video meets the evidence rules. |
 | **Q15** | **Site name and address?** | Working title "Strength Records Registry by Hunchback Hercules", served at `tribbles69.github.io/strength-records` until you choose a domain. |
+
+## 11. Decisions (12 Nov 2026)
+
+Aaron approved the design and accepted every recommendation in section 10. What that means for the build:
+
+- **Q1:** v1 launches with **nine lifts**. The Viking deadlift is added once its standard is defined.
+- **Q2:** every table is split into **Everyone** and **Women** (self-declared; stored as `group`: `all` or `women`). Women's bodyweight classes are 50, 60, 70, 80, 90, 90+. The form has this one extra field. An entry sits in one table; a lifter who qualifies for both can be entered in both.
+- **Q3:** Formspree. The form id is a placeholder until Aaron creates the form (see the README).
+- **Q4 to Q9, Q11, Q13, Q14:** as recommended.
+- **Q10:** the rules page says disputes about the moderator's own lifts are decided by a named second person; the name is a placeholder until Aaron picks someone.
+- **Q12:** Instagram DM to @hunchback_hercules, plus a dedicated email address that is a placeholder until Aaron creates one.
+- **Q15:** working title and address as recommended.

@@ -1,0 +1,23 @@
+{
+  "id": "example-trap-bar-deadlift-1",
+  "handle": "example_lifter_a",
+  "lift": "trap-bar-deadlift",
+  "weight_kg": 250,
+  "entered_as": {
+    "value": 250,
+    "unit": "kg"
+  },
+  "bodyweight_kg": null,
+  "bodyweight_proof": null,
+  "division": "open",
+  "group": "all",
+  "class": null,
+  "adaptive": null,
+  "date": "2026-09-01",
+  "video": null,
+  "weighin_video": null,
+  "approved": "2026-11-12",
+  "status": "standing",
+  "notes": "Example record for testing the site. Not a real lift.",
+  "example": true
+}

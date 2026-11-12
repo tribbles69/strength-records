@@ -1,0 +1,168 @@
+{
+  "lifts": [
+    {
+      "id": "squat",
+      "name": "Squat",
+      "short": "Hip crease below the top of the knee, then stand up.",
+      "straps": false,
+      "equipment": "Barbell from a rack or stands. Standard kit.",
+      "start": "Bar across the back, standing upright with knees locked, feet still.",
+      "movement": "Descend until the hip crease is clearly below the top of the knee, then stand up.",
+      "finish": "Standing upright, knees and hips locked, in control, before re-racking.",
+      "fails": [
+        "Depth not reached, or not visible on the video.",
+        "Any downward movement of the bar once the ascent has started.",
+        "A foot step during the lift.",
+        "A spotter touching the bar before the finish.",
+        "Safety bars or straps touching the bar on the way up."
+      ],
+      "camera": "Side-on or front three-quarter at about hip height, so depth can be judged. A straight front view is not enough."
+    },
+    {
+      "id": "bench",
+      "name": "Bench press",
+      "short": "Paused on the chest, pressed to lockout.",
+      "straps": false,
+      "equipment": "Flat bench and barbell. Standard kit. A lift-off from a helper is allowed; the helper must be clear of the bar before the descent starts.",
+      "start": "Bar held at arm's length, elbows locked.",
+      "movement": "Lower the bar to the chest or upper abdomen, visibly pause it motionless, then press.",
+      "finish": "Elbows locked, bar held still, before re-racking.",
+      "fails": [
+        "No visible pause (touch-and-go, or a bounce).",
+        "The bar sinking into the chest after the pause and being heaved.",
+        "Any downward movement during the press.",
+        "Hips leaving the bench.",
+        "Feet leaving the floor, or the declared foot position moving.",
+        "A spotter touching the bar before the finish.",
+        "An uneven lockout that never evens out."
+      ],
+      "camera": "Side-on or three-quarter, showing the bar, the chest and the hips on the bench."
+    },
+    {
+      "id": "deadlift",
+      "name": "Deadlift",
+      "short": "Floor to lockout, conventional or sumo. No straps.",
+      "straps": false,
+      "equipment": "Standard barbell (stiff or deadlift bar; say which) with standard 450 mm plates, so the bar starts about 225 mm off the floor. Standard kit. Hook grip and mixed grip are fine. No straps.",
+      "start": "Bar motionless on the floor.",
+      "movement": "One continuous pull from the floor to standing.",
+      "finish": "Knees locked, hips locked, shoulders back, bar under control. Lower it with both hands on the bar.",
+      "fails": [
+        "Hitching: resting the bar on the thighs and re-bending the knees to jerk it up.",
+        "Any downward movement before lockout.",
+        "Lockout not reached.",
+        "Dropping the bar from the top.",
+        "Smaller plates, or the bar raised on blocks or mats (that is a rack pull)."
+      ],
+      "camera": "Side-on or three-quarter, full body and both ends of the bar where possible."
+    },
+    {
+      "id": "trap-bar-deadlift",
+      "name": "Trap bar deadlift",
+      "short": "Low handles, floor to lockout. Straps allowed.",
+      "straps": true,
+      "equipment": "Any hex, trap or open-back bar with standard 450 mm plates. State the bar's empty weight (they vary from about 20 to 35 kg). Standard kit. Straps allowed. Low handles only: handles level with the sleeves, about 225 mm off the floor.",
+      "start": "Bar motionless on the floor.",
+      "movement": "One continuous pull from the floor to standing.",
+      "finish": "Standing upright, knees and hips locked, in control. Lower it under control.",
+      "fails": [
+        "High handles used.",
+        "A bounce off the floor, or re-bending the knees to jerk the bar up.",
+        "Any downward movement before lockout.",
+        "Lockout not reached.",
+        "Dropping the bar from the top."
+      ],
+      "camera": "Side-on or three-quarter. Show which handles are being used before the pull."
+    },
+    {
+      "id": "rack-pull-18",
+      "name": "Rack pull (46 cm / 18 in)",
+      "short": "Bar centre no higher than 46 cm, measured on camera. Straps allowed.",
+      "straps": true,
+      "equipment": "Barbell resting on rack pins, safeties or blocks. Standard kit. Straps allowed. The centre of the bar is no higher than 46 cm (18 inches) above the surface you stand on, and a tape measure against the bar is shown on the video before the pull.",
+      "start": "Bar motionless on the pins.",
+      "movement": "Pull from the pins to standing. The lift starts when the bar leaves the pins.",
+      "finish": "Knees and hips locked, shoulders back, in control. Return the bar to the pins under control.",
+      "fails": [
+        "Bar set higher than 46 cm, or the height not shown.",
+        "Hitching.",
+        "Any downward movement before lockout.",
+        "Dropping the bar from the top."
+      ],
+      "camera": "Side-on, showing the pins and the full lifter."
+    },
+    {
+      "id": "shrug",
+      "name": "Barbell shrug",
+      "short": "Strict: locked knees and elbows, one-second pause at the top. Straps allowed.",
+      "straps": true,
+      "equipment": "Barbell, taken from a rack or from the floor. Standard kit. Straps allowed.",
+      "start": "Standing upright, knees locked, arms straight, shoulders fully relaxed down, bar motionless.",
+      "movement": "Raise the shoulders straight up so the bar clearly and visibly rises, and hold the top for a visible one-second pause.",
+      "finish": "Lower under control to the start position.",
+      "fails": [
+        "Any knee bend or hip drive (a power shrug).",
+        "Bending the elbows.",
+        "Rising onto the toes.",
+        "Leaning back to swing the bar.",
+        "No visible pause at the top.",
+        "Movement too small to see clearly at normal speed."
+      ],
+      "camera": "Front-on or front three-quarter, from knees to head, close enough to see the shoulders move."
+    },
+    {
+      "id": "strict-press",
+      "name": "Strict overhead press",
+      "short": "Shoulders to lockout with no leg drive.",
+      "straps": false,
+      "equipment": "Barbell, taken from a rack. Standard kit.",
+      "start": "Bar on the upper chest or shoulders, standing upright, knees locked, motionless.",
+      "movement": "Press overhead using the arms and shoulders only.",
+      "finish": "Elbows locked, bar overhead and still, body upright.",
+      "fails": [
+        "Any knee bend or leg drive.",
+        "Feet moving.",
+        "Leaning back far enough to turn it into a standing incline press.",
+        "Any downward movement during the press.",
+        "No lockout."
+      ],
+      "camera": "Side-on or three-quarter, full body, so the knees and any lean-back can be seen."
+    },
+    {
+      "id": "rack-hold",
+      "name": "Rack hold (10 seconds)",
+      "short": "Stand up with it and hold it for 10 seconds. Straps allowed.",
+      "straps": true,
+      "equipment": "Barbell on rack pins set just below lockout height. Standard kit. Straps allowed.",
+      "start": "Lift the bar clear of the pins and stand fully upright.",
+      "movement": "Hold for 10 seconds with knees and hips locked. The 10 seconds start when you are upright and still, and are judged from the video's own timeline.",
+      "finish": "Return the bar to the pins under control.",
+      "fails": [
+        "Under 10 seconds.",
+        "The bar touching the pins during the hold.",
+        "Knees unlocking.",
+        "The bar resting on the thighs or belt.",
+        "Dropping the bar."
+      ],
+      "camera": "Side-on or three-quarter, showing the pins and the full lifter."
+    },
+    {
+      "id": "grip-hold",
+      "name": "Double-overhand hold (10 seconds)",
+      "short": "A 10-second hold on grip alone: no straps, no hook, no mixed grip.",
+      "straps": false,
+      "equipment": "Standard barbell (28 to 29 mm shaft), taken from pins or from the floor. Chalk only. No straps, no hook grip, no mixed grip: both palms face you, thumbs around the bar.",
+      "start": "Lift the bar and stand fully upright.",
+      "movement": "Hold for 10 seconds with knees and hips locked. The 10 seconds start when you are upright and still, and are judged from the video's own timeline.",
+      "finish": "Return the bar under control.",
+      "fails": [
+        "Under 10 seconds.",
+        "The bar rolling out of the hands, or re-gripping during the hold.",
+        "Hooking the thumb under the fingers.",
+        "Bracing the bar against the body.",
+        "Knees unlocking, or dropping the bar."
+      ],
+      "camera": "Front-on, close enough to see both hands."
+    }
+  ]
+}

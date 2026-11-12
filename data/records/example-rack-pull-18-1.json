@@ -1,0 +1,23 @@
+{
+  "id": "example-rack-pull-18-1",
+  "handle": "example_lifter_a",
+  "lift": "rack-pull-18",
+  "weight_kg": 320,
+  "entered_as": {
+    "value": 320,
+    "unit": "kg"
+  },
+  "bodyweight_kg": 104.5,
+  "bodyweight_proof": "self-reported",
+  "division": "open",
+  "group": "all",
+  "class": null,
+  "adaptive": null,
+  "date": "2026-10-28",
+  "video": null,
+  "weighin_video": null,
+  "approved": "2026-11-12",
+  "status": "standing",
+  "notes": "Example record for testing the site. Not a real lift.",
+  "example": true
+}

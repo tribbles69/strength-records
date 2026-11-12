@@ -1,0 +1,122 @@
+{
+  "records": [
+    {
+      "id": "example-bench-bodyweight-1",
+      "handle": "example_lifter_d",
+      "lift": "bench",
+      "weight_kg": 82.5,
+      "entered_as": {
+        "value": 82.5,
+        "unit": "kg"
+      },
+      "bodyweight_kg": 68.2,
+      "bodyweight_proof": "same-take",
+      "division": "bodyweight",
+      "group": "women",
+      "class": "70",
+      "adaptive": null,
+      "date": "2026-10-20",
+      "video": null,
+      "weighin_video": null,
+      "approved": "2026-11-12",
+      "status": "standing",
+      "notes": "Example record for testing the site. Not a real lift.",
+      "example": true
+    },
+    {
+      "id": "example-deadlift-adaptive-1",
+      "handle": "example_lifter_c",
+      "lift": "deadlift",
+      "weight_kg": 180,
+      "entered_as": {
+        "value": 180,
+        "unit": "kg"
+      },
+      "bodyweight_kg": 92,
+      "bodyweight_proof": "self-reported",
+      "division": "adaptive",
+      "group": "all",
+      "class": null,
+      "adaptive": {
+        "category": "spinal-trunk",
+        "description": "Example description: fused spine, lockout is to my own end range."
+      },
+      "date": "2026-10-02",
+      "video": null,
+      "weighin_video": null,
+      "approved": "2026-11-12",
+      "status": "standing",
+      "notes": "Example record for testing the site. Not a real lift.",
+      "example": true
+    },
+    {
+      "id": "example-rack-pull-18-1",
+      "handle": "example_lifter_a",
+      "lift": "rack-pull-18",
+      "weight_kg": 320,
+      "entered_as": {
+        "value": 320,
+        "unit": "kg"
+      },
+      "bodyweight_kg": 104.5,
+      "bodyweight_proof": "self-reported",
+      "division": "open",
+      "group": "all",
+      "class": null,
+      "adaptive": null,
+      "date": "2026-10-28",
+      "video": null,
+      "weighin_video": null,
+      "approved": "2026-11-12",
+      "status": "standing",
+      "notes": "Example record for testing the site. Not a real lift.",
+      "example": true
+    },
+    {
+      "id": "example-trap-bar-deadlift-1",
+      "handle": "example_lifter_a",
+      "lift": "trap-bar-deadlift",
+      "weight_kg": 250,
+      "entered_as": {
+        "value": 250,
+        "unit": "kg"
+      },
+      "bodyweight_kg": null,
+      "bodyweight_proof": null,
+      "division": "open",
+      "group": "all",
+      "class": null,
+      "adaptive": null,
+      "date": "2026-09-01",
+      "video": null,
+      "weighin_video": null,
+      "approved": "2026-11-12",
+      "status": "standing",
+      "notes": "Example record for testing the site. Not a real lift.",
+      "example": true
+    },
+    {
+      "id": "example-trap-bar-deadlift-2",
+      "handle": "example_lifter_b",
+      "lift": "trap-bar-deadlift",
+      "weight_kg": 262.5,
+      "entered_as": {
+        "value": 262.5,
+        "unit": "kg"
+      },
+      "bodyweight_kg": null,
+      "bodyweight_proof": null,
+      "division": "open",
+      "group": "all",
+      "class": null,
+      "adaptive": null,
+      "date": "2026-10-10",
+      "video": null,
+      "weighin_video": null,
+      "approved": "2026-11-12",
+      "status": "standing",
+      "notes": "Example record for testing the site. Not a real lift.",
+      "example": true
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "divisions": [
+    {
+      "id": "adaptive",
+      "name": "Adaptive / para",
+      "short": "Self-declared category, with the adaptation stated on the record.",
+      "icon": "assets/img/division-adaptive.png"
+    },
+    {
+      "id": "bodyweight",
+      "name": "Bodyweight classes",
+      "short": "Weigh-in on video, in the same take or on the same day.",
+      "icon": "assets/img/division-bodyweight.png"
+    },
+    {
+      "id": "open",
+      "name": "Open",
+      "short": "Any bodyweight. The heaviest verified lift.",
+      "icon": "assets/img/division-open.png"
+    }
+  ],
+  "groups": [
+    { "id": "all", "name": "Everyone" },
+    { "id": "women", "name": "Women" }
+  ],
+  "classes": {
+    "all": [
+      { "id": "60", "name": "60 kg", "max": 60 },
+      { "id": "70", "name": "70 kg", "max": 70 },
+      { "id": "80", "name": "80 kg", "max": 80 },
+      { "id": "90", "name": "90 kg", "max": 90 },
+      { "id": "100", "name": "100 kg", "max": 100 },
+      { "id": "110", "name": "110 kg", "max": 110 },
+      { "id": "125", "name": "125 kg", "max": 125 },
+      { "id": "125+", "name": "125 kg+", "max": null }
+    ],
+    "women": [
+      { "id": "50", "name": "50 kg", "max": 50 },
+      { "id": "60", "name": "60 kg", "max": 60 },
+      { "id": "70", "name": "70 kg", "max": 70 },
+      { "id": "80", "name": "80 kg", "max": 80 },
+      { "id": "90", "name": "90 kg", "max": 90 },
+      { "id": "90+", "name": "90 kg+", "max": null }
+    ]
+  },
+  "adaptive_categories": [
+    { "id": "upper-limb", "name": "Upper limb" },
+    { "id": "lower-limb", "name": "Lower limb" },
+    { "id": "spinal-trunk", "name": "Spinal / trunk" },
+    { "id": "seated", "name": "Seated / wheelchair" },
+    { "id": "short-stature", "name": "Short stature" },
+    { "id": "neurological", "name": "Neurological" },
+    { "id": "visual", "name": "Visual impairment" },
+    { "id": "other", "name": "Other" }
+  ],
+  "statuses": ["standing", "under-review", "evidence-unavailable", "removed"]
+}

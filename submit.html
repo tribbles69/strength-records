@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit a lift | Strength Records Registry</title>
+<meta name="description" content="Submit a lift to the Strength Records Registry. No account needed: a handle, the lift, the weight and a link to your unedited video.">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Strength Records Registry">
+<meta property="og:title" content="Submit a lift | Strength Records Registry">
+<meta property="og:description" content="Submit a lift to the Strength Records Registry. No account needed: a handle, the lift, the weight and a link to your unedited video.">
+<meta property="og:url" content="https://tribbles69.github.io/strength-records/submit.html">
+<meta property="og:image" content="https://tribbles69.github.io/strength-records/assets/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="submit">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/icon-192.png" alt="" width="34" height="34">
+      <span>Strength Records Registry<small>by Hunchback Hercules</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="records.html">Records</a>
+      <a href="rules.html">Rules</a>
+      <a href="submit.html" aria-current="page">Submit</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <h1>Submit a lift</h1>
+  <p class="lede">No account needed. Read the <a href="rules.html">rules</a> and the standard for your lift first: a lift is judged only on its video.</p>
+  <div class="card">
+    <h3>Before you send it</h3>
+    <ul>
+      <li>One unedited take, with every plate shown on camera before the lift.</li>
+      <li>Your whole body and the bar in frame for the whole lift.</li>
+      <li>The video is public or unlisted, and will stay up.</li>
+      <li>It beats the standing record by at least 0.5 kg, or the table is empty.</li>
+    </ul>
+  </div>
+
+  <div id="submit-status"></div>
+  <noscript><div class="notice"><p>This form needs JavaScript to send.</p></div></noscript>
+
+  <form class="form" id="submit-form" method="post" novalidate>
+    <fieldset>
+      <legend>The lift</legend>
+      <div class="field">
+        <label for="s-handle">Handle <span class="public-tag">PUBLIC</span></label>
+        <input type="text" id="s-handle" name="handle" maxlength="40" required autocomplete="off" autocapitalize="none" spellcheck="false">
+        <p class="hint">The name shown on the record. An Instagram or Reddit handle, or any name you like.</p>
+      </div>
+      <div class="field">
+        <label for="s-lift">Lift <span class="public-tag">PUBLIC</span></label>
+        <select id="s-lift" name="lift" required><option value="">Choose a lift</option></select>
+      </div>
+      <div class="field">
+        <label for="s-weight">Weight <span class="public-tag">PUBLIC</span></label>
+        <div class="pair">
+          <input type="number" id="s-weight" name="weight" min="1" max="3000" step="0.01" inputmode="decimal" required>
+          <select name="weight_unit" aria-label="Weight unit"><option value="kg">kg</option><option value="lb">lb</option></select>
+        </div>
+        <p class="hint">Bar, plates and collars together. Pounds are converted and rounded down to the nearest 0.5 kg.</p>
+      </div>
+      <div class="field">
+        <label for="s-date">Date of the lift <span class="public-tag">PUBLIC</span></label>
+        <input type="date" id="s-date" name="date" required>
+      </div>
+      <div class="field">
+        <label for="s-video">Video link <span class="public-tag">PUBLIC</span></label>
+        <input type="url" id="s-video" name="video" placeholder="https://" required inputmode="url" autocapitalize="none" spellcheck="false">
+        <p class="hint">YouTube (public or unlisted) is preferred. Instagram is accepted.</p>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Division</legend>
+      <div class="field">
+        <label for="s-division">Division <span class="public-tag">PUBLIC</span></label>
+        <select id="s-division" name="division" required>
+          <option value="open">Open: any bodyweight, no weigh-in</option>
+          <option value="bodyweight">Bodyweight class: weigh-in on video</option>
+          <option value="adaptive">Adaptive / para</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="s-group">Table <span class="public-tag">PUBLIC</span></label>
+        <select id="s-group" name="group" required>
+          <option value="all">Everyone</option>
+          <option value="women">Women</option>
+        </select>
+        <p class="hint">Every table is kept twice. Choose the one you are entering.</p>
+      </div>
+      <div class="field">
+        <label for="s-bw">Bodyweight <span class="public-tag">PUBLIC</span> <span id="bw-optional" class="muted">(optional)</span></label>
+        <div class="pair">
+          <input type="number" id="s-bw" name="bodyweight" min="20" max="900" step="0.1" inputmode="decimal">
+          <select name="bodyweight_unit" aria-label="Bodyweight unit"><option value="kg">kg</option><option value="lb">lb</option></select>
+        </div>
+      </div>
+      <div id="weighin-fields" hidden>
+        <div class="field">
+          <label for="s-weighin">Weigh-in</label>
+          <select id="s-weighin" name="weighin">
+            <option value="same-take">In the same video as the lift</option>
+            <option value="same-day">A separate video, filmed the same day</option>
+          </select>
+          <p class="hint">Show the scale at zero, then reading a marked plate, then step on.</p>
+        </div>
+        <div class="field" id="weighin-video-field" hidden>
+          <label for="s-weighin-video">Weigh-in video link <span class="public-tag">PUBLIC</span></label>
+          <input type="url" id="s-weighin-video" name="weighin_video" placeholder="https://" inputmode="url" autocapitalize="none" spellcheck="false">
+        </div>
+      </div>
+      <div id="adaptive-fields" hidden>
+        <div class="field">
+          <label for="s-cat">Adaptive category <span class="public-tag">PUBLIC</span></label>
+          <select id="s-cat" name="adaptive_category"><option value="">Choose a category</option></select>
+        </div>
+        <div class="field">
+          <label for="s-desc">Your adaptation, in your own words <span class="public-tag">PUBLIC</span></label>
+          <textarea id="s-desc" name="adaptive_description" maxlength="240"></textarea>
+          <p class="hint">One or two sentences, shown on the record. For example: "Left below-elbow amputee, lifting with a hook attachment." Say as much or as little as you want. This is information about your health or disability, and it is published only because you choose to give it.</p>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact</legend>
+      <div class="field">
+        <label for="s-email">Email <span class="private-tag">NEVER PUBLISHED</span> <span class="muted">(optional)</span></label>
+        <input type="email" id="s-email" name="email" autocomplete="email" inputmode="email" autocapitalize="none">
+        <p class="hint">Only used to tell you whether the lift was approved, or to ask a question. Leave it empty and you will not hear back, but an approved lift will still appear.</p>
+      </div>
+    </fieldset>
+
+    <label class="check"><input type="checkbox" name="confirm" value="yes" required> <span>This is me, or I have the lifter's permission. The lifter is 18 or over. I understand that everything marked PUBLIC will be published, and I have read the <a href="privacy.html">privacy page</a>.</span></label>
+
+    <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+    <input type="hidden" name="approval_block" value="">
+    <input type="hidden" name="_subject" value="Record submission">
+    <div><button type="submit" class="btn">Send submission</button></div>
+  </form>
+
+  <h2>Dispute a record</h2>
+  <details class="standard" id="dispute">
+    <summary>Open the dispute form<span>Say which record, what is wrong, and where in the video.</span></summary>
+    <div class="body">
+      <p>Valid grounds are listed in the <a href="rules.html#history">rules</a>. The record shows "under review" while it is checked.</p>
+      <div id="dispute-status"></div>
+      <form class="form" id="dispute-form" method="post" novalidate>
+        <div class="field">
+          <label for="d-record">Which record</label>
+          <input type="text" id="d-record" name="record" list="dispute-record-list" required autocomplete="off" autocapitalize="none" spellcheck="false">
+          <datalist id="dispute-record-list"></datalist>
+          <p class="hint">Paste the record's page address, or its id.</p>
+        </div>
+        <div class="field">
+          <label for="d-what">What is wrong</label>
+          <textarea id="d-what" name="what_is_wrong" maxlength="1000" required></textarea>
+        </div>
+        <div class="field">
+          <label for="d-when">Where in the video</label>
+          <input type="text" id="d-when" name="timestamp" placeholder="For example 0:42" maxlength="40" required>
+        </div>
+        <div class="field">
+          <label for="d-email">Email <span class="private-tag">NEVER PUBLISHED</span> <span class="muted">(optional)</span></label>
+          <input type="email" id="d-email" name="email" autocomplete="email" inputmode="email" autocapitalize="none">
+        </div>
+        <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <input type="hidden" name="_subject" value="Record dispute">
+        <div><button type="submit" class="btn ghost">Send dispute</button></div>
+      </form>
+    </div>
+  </details>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="records.html">Records</a>
+      <a href="rules.html">Rules</a>
+      <a href="submit.html">Submit a lift</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.instagram.com/hunchback_hercules/" rel="noopener noreferrer">Instagram</a>
+    </nav>
+    <p>Video-verified, not federation-certified: no referees in the room, no calibrated plates, no drug testing. A record here claims exactly what its video shows.</p>
+    <p>&copy; <span id="year">2026</span> Hunchback Hercules. No cookies, no tracking.</p>
+  </div>
+</footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

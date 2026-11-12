@@ -1,0 +1,50 @@
+name: Approve submission
+
+# Run this from the Actions tab (or the GitHub mobile app) to publish an approved lift.
+# Paste the "approval_block" line from the submission email. Never paste the email address.
+
+on:
+  workflow_dispatch:
+    inputs:
+      submission:
+        description: 'The approval_block line from the submission email (starts with { and ends with })'
+        required: true
+        type: string
+      force:
+        description: 'List it even if it does not beat the standing record'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-changes
+  cancel-in-progress: false
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Create the record file
+        env:
+          SUBMISSION: ${{ inputs.submission }}
+          FORCE: ${{ inputs.force }}
+        shell: bash
+        run: node scripts/approve.mjs | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Validate every data file
+        run: node scripts/validate.mjs
+      - name: Commit and publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "Approve record submission"
+          git push origin main

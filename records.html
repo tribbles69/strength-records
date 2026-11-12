@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Records | Strength Records Registry</title>
+<meta name="description" content="Browse video-verified strength records by lift, division, bodyweight class and adaptive category, with the history of each record.">
+<meta name="theme-color" content="#0a0a0b">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Strength Records Registry">
+<meta property="og:title" content="Records | Strength Records Registry">
+<meta property="og:description" content="Browse video-verified strength records by lift, division, bodyweight class and adaptive category, with the history of each record.">
+<meta property="og:url" content="https://tribbles69.github.io/strength-records/records.html">
+<meta property="og:image" content="https://tribbles69.github.io/strength-records/assets/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="records">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/icon-192.png" alt="" width="34" height="34">
+      <span>Strength Records Registry<small>by Hunchback Hercules</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="records.html" aria-current="page">Records</a>
+      <a href="rules.html">Rules</a>
+      <a href="submit.html">Submit</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="wrap">
+  <h1>Records</h1>
+  <p class="muted">One table for each lift, division and class. Open any record to watch its video.</p>
+  <form class="filters" id="filters" onsubmit="return false">
+    <div><label for="f-lift">Lift</label><select id="f-lift"><option value="">All lifts</option></select></div>
+    <div><label for="f-division">Division</label><select id="f-division"><option value="">All divisions</option></select></div>
+    <div><label for="f-group">Table</label><select id="f-group"><option value="">Everyone and Women</option></select></div>
+    <div><label for="f-sub" id="f-sub-label">Class / category</label><select id="f-sub" disabled><option value="">Not used</option></select></div>
+    <div class="wide"><label for="f-q">Search by lifter</label><input type="search" id="f-q" placeholder="Handle" autocomplete="off" autocapitalize="none" spellcheck="false"></div>
+    <label class="check wide"><input type="checkbox" id="f-history"> <span>Show history as well: superseded and removed records</span></label>
+    <div class="wide"><button type="button" class="btn ghost" id="f-reset">Clear filters</button></div>
+  </form>
+  <div id="results"><p class="muted">Loading records…</p></div>
+  <noscript><div class="notice"><p>This page needs JavaScript to show the records.</p></div></noscript>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="records.html">Records</a>
+      <a href="rules.html">Rules</a>
+      <a href="submit.html">Submit a lift</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.instagram.com/hunchback_hercules/" rel="noopener noreferrer">Instagram</a>
+    </nav>
+    <p>Video-verified, not federation-certified: no referees in the room, no calibrated plates, no drug testing. A record here claims exactly what its video shows.</p>
+    <p>&copy; <span id="year">2026</span> Hunchback Hercules. No cookies, no tracking.</p>
+  </div>
+</footer>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

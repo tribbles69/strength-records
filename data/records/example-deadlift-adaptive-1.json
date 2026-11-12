@@ -1,0 +1,26 @@
+{
+  "id": "example-deadlift-adaptive-1",
+  "handle": "example_lifter_c",
+  "lift": "deadlift",
+  "weight_kg": 180,
+  "entered_as": {
+    "value": 180,
+    "unit": "kg"
+  },
+  "bodyweight_kg": 92,
+  "bodyweight_proof": "self-reported",
+  "division": "adaptive",
+  "group": "all",
+  "class": null,
+  "adaptive": {
+    "category": "spinal-trunk",
+    "description": "Example description: fused spine, lockout is to my own end range."
+  },
+  "date": "2026-10-02",
+  "video": null,
+  "weighin_video": null,
+  "approved": "2026-11-12",
+  "status": "standing",
+  "notes": "Example record for testing the site. Not a real lift.",
+  "example": true
+}
